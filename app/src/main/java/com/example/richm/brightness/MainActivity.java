@@ -44,18 +44,15 @@ public class MainActivity extends Activity {
     //Make all these actions permanent by using layoutparams.screenBrightness = 0 / 100f;
     public void btn1(View v) {
         android.view.WindowManager.LayoutParams lp = getWindow().getAttributes(); //why isn't this working?
-        lp.screenBrightness = 0 / 100f;
         getWindow().setAttributes(lp);
 
     }
     public void btn2(View v) {
         WindowManager.LayoutParams lp = getWindow().getAttributes();
-        lp.screenBrightness = 14 / 100f;
         getWindow().setAttributes(lp);
     }
     public void btn3(View v) {
         WindowManager.LayoutParams lp = getWindow().getAttributes();
-        lp.screenBrightness = 100 / 100.0f;
         getWindow().setAttributes(lp);
     }
 
